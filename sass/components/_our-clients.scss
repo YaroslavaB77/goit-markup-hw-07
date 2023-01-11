@@ -1,0 +1,27 @@
+.our-clients {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  &__logo-border {
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+  }
+
+  &__logo-border:hover,
+  &__logo-border:focus {
+    border: 1px solid $brand-color;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  &__logo-icon use {
+    fill: $icon-color;
+  }
+
+  &__logo-icon:hover use,
+  &__logo-icon:focus use {
+    fill: $brand-color;
+  }
+}

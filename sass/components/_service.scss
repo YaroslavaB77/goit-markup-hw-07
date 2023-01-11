@@ -1,0 +1,54 @@
+.service {
+  background-color: rgba(47, 48, 58, 1);
+  color: $main-background-color;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+      270deg,
+      rgba(47, 48, 58, 0.4) 0%,
+      rgba(47, 48, 58, 0.4) 100%
+    ),
+    url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__phrase {
+    font-weight: 900;
+    font-size: 2.7rem;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.06em;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding-top: 200px;
+  }
+
+  &__button {
+    padding: 10px 41px 10px 42px;
+    text-align: center;
+    align-self: center;
+    border-radius: 4px;
+    padding: 10px 41px 10px 42px;
+    width: 200px;
+    height: 50px;
+    background: $brand-color;
+    border: 0 solid $brand-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: $main-background-color;
+    margin-bottom: 200px;
+  }
+
+  &__button:hover,
+  &__button:focus {
+    background-color: $main-background-color;
+    color: rgba(33, 33, 33, 1);
+    cursor: pointer;
+  }
+}

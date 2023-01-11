@@ -1,0 +1,190 @@
+.modal {
+  position: fixed;
+  width: 528px;
+  height: 581px;
+  background-color: $main-background-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition-duration: 1s;
+  z-index: 2;
+
+  & &__close-button {
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 490px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $main-background-color;
+  }
+
+  &__close-button:hover {
+    background-color: $brand-color;
+    color: $main-background-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  &__header {
+    font-weight: 700;
+    font-size: 1, 25rem;
+    line-height: 1, 15;
+    text-align: center;
+    color: rgba(33, 33, 33, 1);
+    margin: 40px 40px 12px 40px;
+  }
+
+  &__contact-info {
+    list-style: none;
+    width: 448px;
+    height: 342px;
+  }
+
+  &__list {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  &__list span {
+    margin: 0;
+  }
+
+  &__list span {
+    font-size: 0.75rem;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $descriprion-color;
+  }
+
+  &__list svg {
+    position: absolute;
+    left: 15px;
+    top: 36px;
+  }
+
+  &__list .icon-phone {
+    left: 15px;
+    top: 40px;
+  }
+
+  &__list input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 448px;
+    height: 40px;
+    outline: none;
+    text-indent: 40px;
+  }
+
+  &__list &__input {
+    margin-top: 4px;
+  }
+
+  &__list:hover li,
+  &__list:focus li,
+  &__list:hover input,
+  &__list:focus input,
+  &__list label:hover svg,
+  &__list label:focus svg,
+  &__list:hover &__textarea,
+  &__list:focus &__textarea {
+    border-color: var(--brand-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: $brand-color;
+  }
+
+  &__textarea {
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+    padding: 12px 16px;
+    margin-top: 4px;
+  }
+
+  &__textarea::placeholder {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    font-size: 0.75rem;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &__check {
+    position: relative;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $descriprion-color;
+    margin-top: 4px;
+  }
+
+  &__check input {
+    height: 15px;
+    width: 16px;
+    background: rgba(33, 33, 33, 1);
+  }
+
+  &__check &__check-icon {
+    fill: transparent;
+    left: 11px;
+    position: absolute;
+  }
+
+  &__check-label {
+    display: flex;
+    gap: 9px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__checkbox:checked + &__check-icon {
+    fill: $main-background-color;
+    background-color: $brand-color;
+    border-radius: 2px;
+  }
+
+  &__check-link {
+    font-size: 0.8rem;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $brand-color;
+  }
+
+  &__submit {
+    cursor: pointer;
+    color: $main-background-color;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: center;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    outline: none;
+    background: $brand-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0 solid $brand-color;
+    margin-top: 55px;
+    margin-left: 164px;
+    margin-right: 164px;
+  }
+
+  &__submit:hover,
+  &__submit:focus {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: inset -1px 3px 50px 18px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+}

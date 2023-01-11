@@ -1,0 +1,142 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &__robotofonts &__home-page,
+  &__robotofonts &__current-page,
+  &__robotofonts &__contact-page,
+  &__robotofonts &__contacts {
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  &__menu {
+    position: relative;
+    list-style: none;
+  }
+
+  &__menu &__home-page,
+  &__menu &__current-page,
+  &__menu &__contact-page {
+    text-decoration: none;
+    color: rgba(33, 33, 33, 1);
+  }
+
+  &__menu &__home-page:hover,
+  &__menu &__current-page:hover,
+  &__menu &__contact-page:hover,
+  &__menu &__home-page:focus,
+  &__menu &_current-page:focus,
+  &__menu &__contact-page:focus {
+    color: $brand-color;
+  }
+
+  &__menu &__home-page:hover::after,
+  &__menu &__home-page:focus::after {
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 4px;
+    left: 130px;
+    top: 31px;
+    background-color: $brand-color;
+    border-radius: 2px;
+  }
+
+  &__menu &__current-page:hover::after,
+  &__menu &__current-page:focus::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 4px;
+    left: 230px;
+    top: 31px;
+    background-color: $brand-color;
+    border-radius: 2px;
+  }
+
+  &__menu &__contact-page:hover::after,
+  &__menu &__contact-page:focus::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 4px;
+    left: 330px;
+    top: 31px;
+    background-color: $brand-color;
+    border-radius: 2px;
+  }
+
+  &__active-page &__current-page,
+  &__active-page &__home-page {
+    color: $brand-color;
+  }
+
+  &__active-page &__home-page::after {
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 4px;
+    left: 130px;
+    top: 31px;
+    background-color: $brand-color;
+    border-radius: 2px;
+  }
+
+  &__active-page &__current-page::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 4px;
+    left: 230px;
+    top: 31px;
+    background-color: $brand-color;
+    border-radius: 2px;
+  }
+
+  & li {
+    display: inline-block;
+  }
+
+  &__home-page {
+    margin-left: 93px;
+  }
+
+  &__current-page {
+    margin-left: 46px;
+  }
+
+  &__contact-page {
+    margin-left: 46px;
+  }
+
+  &__contacts {
+    text-decoration: none;
+    color: $descriprion-color;
+  }
+
+  &__mail:hover,
+  &__phone:hover {
+    fill: $brand-color;
+    stroke: $brand-color;
+    color: $brand-color;
+  }
+
+  &__mail svg,
+  &__phone svg {
+    margin-right: 10px;
+    fill: $descriprion-color;
+  }
+
+  &__mail {
+    margin-left: 345px;
+  }
+
+  &__phone {
+    margin-left: 30px;
+  }
+}
